@@ -227,10 +227,10 @@ object impl(me:host) = {
 					exit(EXIT_FAILURE);
 				}
 			}*/
-			if (setsockopt(s, SOL_SOCKET, SO_BINDTODEVICE, dev, strlen(dev)) < 0) {
+			/* if (setsockopt(s, SOL_SOCKET, SO_BINDTODEVICE, dev, strlen(dev)) < 0) {
 				perror("setsockopt: bind to device");
 				exit(EXIT_FAILURE);
-			} //TODO comment for shadow
+			} */ //TODO comment for shadow
 			struct sockaddr_in v_src = {};
 			v_src.sin_addr.s_addr = htonl(addr.addr); // TODO reversorder
 			//inet_pton(AF_INET, htonl(addr.addr), &v_src.sin_addr.s_addr);

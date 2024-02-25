@@ -18,7 +18,6 @@ include quic_time
 
 after init {
     call time_api.c_timer.start;
-    call time_api.c_timer.start;
 }
 
 after init {
@@ -53,8 +52,6 @@ export tls_recv_event
 #export frame.max_stream_data.handle
 #export frame.max_data.handle
 
-
-relation slept
 
 after init {
     slept := false;
