@@ -1,0 +1,1360 @@
+"http_request_file.txt"
+PROOTPATH 5b /PFV
+"/PFV/Protocols-Ivy/doc/examples/quic/ping/http_request_file.txt"
+3
+COUCOU
+[112]
+[112,105]
+[112,105,110]
+[112,105,110,103]
+[112,105,110,103]
+C time = start
+insertBreakpoint: name = "0"
+insertBreakpoint: now.tv_sec = 946684800
+insertBreakpoint: now.tv_usec = 0
+insertBreakpoint: name false = "0"
+insertBreakpoint: end_ms false = 0
+insertBreakpoint: breakpoints_ms.count(name) false = 1
+SOCKET 4
+source port number 0
+binding client id: client addr: 184549377 port: 4990
+source port number 4990
+installing reader 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "0"
+getTimeFromBreakpoint: now.tv_usec = 65000
+getTimeFromBreakpoint: end.tv_usec = 0
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 65
+insertBreakpoint: name = "1"
+insertBreakpoint: now.tv_sec = 946684800
+insertBreakpoint: now.tv_usec = 65000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 80
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,0,80]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "1"
+getTimeFromBreakpoint: now.tv_usec = 588000
+getTimeFromBreakpoint: end.tv_usec = 65000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1523
+insertBreakpoint: name = "2"
+insertBreakpoint: now.tv_sec = 946684801
+insertBreakpoint: now.tv_usec = 588000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 1588
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "2"
+getTimeFromBreakpoint: now.tv_usec = 603000
+getTimeFromBreakpoint: end.tv_usec = 588000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 15
+insertBreakpoint: name = "3"
+insertBreakpoint: now.tv_sec = 946684801
+insertBreakpoint: now.tv_usec = 603000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 1623
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,6,87]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "3"
+getTimeFromBreakpoint: now.tv_usec = 17000
+getTimeFromBreakpoint: end.tv_usec = 603000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1414
+insertBreakpoint: name = "4"
+insertBreakpoint: now.tv_sec = 946684803
+insertBreakpoint: now.tv_usec = 17000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 3017
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "4"
+getTimeFromBreakpoint: now.tv_usec = 62000
+getTimeFromBreakpoint: end.tv_usec = 17000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 45
+insertBreakpoint: name = "5"
+insertBreakpoint: now.tv_sec = 946684803
+insertBreakpoint: now.tv_usec = 62000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 3077
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,12,5]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "5"
+getTimeFromBreakpoint: now.tv_usec = 33000
+getTimeFromBreakpoint: end.tv_usec = 62000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1971
+insertBreakpoint: name = "6"
+insertBreakpoint: now.tv_sec = 946684805
+insertBreakpoint: now.tv_usec = 33000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 5033
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "6"
+getTimeFromBreakpoint: now.tv_usec = 43000
+getTimeFromBreakpoint: end.tv_usec = 33000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 10
+insertBreakpoint: name = "7"
+insertBreakpoint: now.tv_sec = 946684805
+insertBreakpoint: now.tv_usec = 43000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 5153
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,20,33]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "7"
+getTimeFromBreakpoint: now.tv_usec = 437000
+getTimeFromBreakpoint: end.tv_usec = 43000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1394
+insertBreakpoint: name = "8"
+insertBreakpoint: now.tv_sec = 946684806
+insertBreakpoint: now.tv_usec = 437000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 6437
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "8"
+getTimeFromBreakpoint: now.tv_usec = 442000
+getTimeFromBreakpoint: end.tv_usec = 437000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 5
+insertBreakpoint: name = "9"
+insertBreakpoint: now.tv_sec = 946684806
+insertBreakpoint: now.tv_usec = 442000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 6467
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,25,67]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "9"
+getTimeFromBreakpoint: now.tv_usec = 903000
+getTimeFromBreakpoint: end.tv_usec = 442000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1461
+insertBreakpoint: name = "10"
+insertBreakpoint: now.tv_sec = 946684807
+insertBreakpoint: now.tv_usec = 903000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 7903
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "10"
+getTimeFromBreakpoint: now.tv_usec = 13000
+getTimeFromBreakpoint: end.tv_usec = 903000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 110
+insertBreakpoint: name = "11"
+insertBreakpoint: now.tv_sec = 946684808
+insertBreakpoint: now.tv_usec = 13000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 8038
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,31,102]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "11"
+getTimeFromBreakpoint: now.tv_usec = 562000
+getTimeFromBreakpoint: end.tv_usec = 13000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1549
+insertBreakpoint: name = "12"
+insertBreakpoint: now.tv_sec = 946684809
+insertBreakpoint: now.tv_usec = 562000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 9562
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "12"
+getTimeFromBreakpoint: now.tv_usec = 577000
+getTimeFromBreakpoint: end.tv_usec = 562000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 15
+insertBreakpoint: name = "13"
+insertBreakpoint: now.tv_sec = 946684809
+insertBreakpoint: now.tv_usec = 577000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 9597
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,37,125]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "13"
+getTimeFromBreakpoint: now.tv_usec = 808000
+getTimeFromBreakpoint: end.tv_usec = 577000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1231
+insertBreakpoint: name = "14"
+insertBreakpoint: now.tv_sec = 946684810
+insertBreakpoint: now.tv_usec = 808000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 10808
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "14"
+getTimeFromBreakpoint: now.tv_usec = 868000
+getTimeFromBreakpoint: end.tv_usec = 808000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 60
+insertBreakpoint: name = "15"
+insertBreakpoint: now.tv_sec = 946684810
+insertBreakpoint: now.tv_usec = 868000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 10873
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,42,121]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "15"
+getTimeFromBreakpoint: now.tv_usec = 729000
+getTimeFromBreakpoint: end.tv_usec = 868000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1861
+insertBreakpoint: name = "16"
+insertBreakpoint: now.tv_sec = 946684812
+insertBreakpoint: now.tv_usec = 729000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 12729
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "16"
+getTimeFromBreakpoint: now.tv_usec = 739000
+getTimeFromBreakpoint: end.tv_usec = 729000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 10
+insertBreakpoint: name = "17"
+insertBreakpoint: now.tv_sec = 946684812
+insertBreakpoint: now.tv_usec = 739000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 12804
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,50,4]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "17"
+getTimeFromBreakpoint: now.tv_usec = 446000
+getTimeFromBreakpoint: end.tv_usec = 739000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1707
+insertBreakpoint: name = "18"
+insertBreakpoint: now.tv_sec = 946684814
+insertBreakpoint: now.tv_usec = 446000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 14446
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "18"
+getTimeFromBreakpoint: now.tv_usec = 466000
+getTimeFromBreakpoint: end.tv_usec = 446000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 20
+insertBreakpoint: name = "19"
+insertBreakpoint: now.tv_sec = 946684814
+insertBreakpoint: now.tv_usec = 466000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 14471
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,56,135]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "19"
+getTimeFromBreakpoint: now.tv_usec = 207000
+getTimeFromBreakpoint: end.tv_usec = 466000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1741
+insertBreakpoint: name = "20"
+insertBreakpoint: now.tv_sec = 946684816
+insertBreakpoint: now.tv_usec = 207000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 16207
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "20"
+getTimeFromBreakpoint: now.tv_usec = 252000
+getTimeFromBreakpoint: end.tv_usec = 207000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 45
+insertBreakpoint: name = "21"
+insertBreakpoint: now.tv_sec = 946684816
+insertBreakpoint: now.tv_usec = 252000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 16317
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,63,189]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "21"
+getTimeFromBreakpoint: now.tv_usec = 515000
+getTimeFromBreakpoint: end.tv_usec = 252000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1263
+insertBreakpoint: name = "22"
+insertBreakpoint: now.tv_sec = 946684817
+insertBreakpoint: now.tv_usec = 515000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 17515
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "22"
+getTimeFromBreakpoint: now.tv_usec = 585000
+getTimeFromBreakpoint: end.tv_usec = 515000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 70
+insertBreakpoint: name = "23"
+insertBreakpoint: now.tv_sec = 946684817
+insertBreakpoint: now.tv_usec = 585000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 17600
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,68,192]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "23"
+getTimeFromBreakpoint: now.tv_usec = 420000
+getTimeFromBreakpoint: end.tv_usec = 585000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1835
+insertBreakpoint: name = "24"
+insertBreakpoint: now.tv_sec = 946684819
+insertBreakpoint: now.tv_usec = 420000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 19420
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "24"
+getTimeFromBreakpoint: now.tv_usec = 420000
+getTimeFromBreakpoint: end.tv_usec = 420000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 0
+insertBreakpoint: name = "25"
+insertBreakpoint: now.tv_sec = 946684819
+insertBreakpoint: now.tv_usec = 420000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 19505
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,76,49]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "25"
+getTimeFromBreakpoint: now.tv_usec = 946000
+getTimeFromBreakpoint: end.tv_usec = 420000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1526
+insertBreakpoint: name = "26"
+insertBreakpoint: now.tv_sec = 946684820
+insertBreakpoint: now.tv_usec = 946000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 20946
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "26"
+getTimeFromBreakpoint: now.tv_usec = 946000
+getTimeFromBreakpoint: end.tv_usec = 946000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 0
+insertBreakpoint: name = "27"
+insertBreakpoint: now.tv_sec = 946684820
+insertBreakpoint: now.tv_usec = 946000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 20971
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,81,235]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "27"
+getTimeFromBreakpoint: now.tv_usec = 497000
+getTimeFromBreakpoint: end.tv_usec = 946000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1551
+insertBreakpoint: name = "28"
+insertBreakpoint: now.tv_sec = 946684822
+insertBreakpoint: now.tv_usec = 497000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 22497
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "28"
+getTimeFromBreakpoint: now.tv_usec = 522000
+getTimeFromBreakpoint: end.tv_usec = 497000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 25
+insertBreakpoint: name = "29"
+insertBreakpoint: now.tv_sec = 946684822
+insertBreakpoint: now.tv_usec = 522000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 22567
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,88,39]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "29"
+getTimeFromBreakpoint: now.tv_usec = 145000
+getTimeFromBreakpoint: end.tv_usec = 522000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1623
+insertBreakpoint: name = "30"
+insertBreakpoint: now.tv_sec = 946684824
+insertBreakpoint: now.tv_usec = 145000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 24145
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "30"
+getTimeFromBreakpoint: now.tv_usec = 165000
+getTimeFromBreakpoint: end.tv_usec = 145000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 20
+insertBreakpoint: name = "31"
+insertBreakpoint: now.tv_sec = 946684824
+insertBreakpoint: now.tv_usec = 165000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 24170
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,94,106]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "31"
+getTimeFromBreakpoint: now.tv_usec = 523000
+getTimeFromBreakpoint: end.tv_usec = 165000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1358
+insertBreakpoint: name = "32"
+insertBreakpoint: now.tv_sec = 946684825
+insertBreakpoint: now.tv_usec = 523000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 25523
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "32"
+getTimeFromBreakpoint: now.tv_usec = 548000
+getTimeFromBreakpoint: end.tv_usec = 523000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 25
+insertBreakpoint: name = "33"
+insertBreakpoint: now.tv_sec = 946684825
+insertBreakpoint: now.tv_usec = 548000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 25558
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,99,214]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "33"
+getTimeFromBreakpoint: now.tv_usec = 396000
+getTimeFromBreakpoint: end.tv_usec = 548000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1848
+insertBreakpoint: name = "34"
+insertBreakpoint: now.tv_sec = 946684827
+insertBreakpoint: now.tv_usec = 396000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 27396
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "34"
+getTimeFromBreakpoint: now.tv_usec = 411000
+getTimeFromBreakpoint: end.tv_usec = 396000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 15
+insertBreakpoint: name = "35"
+insertBreakpoint: now.tv_sec = 946684827
+insertBreakpoint: now.tv_usec = 411000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 27446
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,107,54]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "35"
+getTimeFromBreakpoint: now.tv_usec = 107000
+getTimeFromBreakpoint: end.tv_usec = 411000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1696
+insertBreakpoint: name = "36"
+insertBreakpoint: now.tv_sec = 946684829
+insertBreakpoint: now.tv_usec = 107000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 29107
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "36"
+getTimeFromBreakpoint: now.tv_usec = 127000
+getTimeFromBreakpoint: end.tv_usec = 107000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 20
+insertBreakpoint: name = "37"
+insertBreakpoint: now.tv_sec = 946684829
+insertBreakpoint: now.tv_usec = 127000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 29137
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,113,209]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "37"
+getTimeFromBreakpoint: now.tv_usec = 706000
+getTimeFromBreakpoint: end.tv_usec = 127000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1579
+insertBreakpoint: name = "38"
+insertBreakpoint: now.tv_sec = 946684830
+insertBreakpoint: now.tv_usec = 706000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 30706
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "38"
+getTimeFromBreakpoint: now.tv_usec = 716000
+getTimeFromBreakpoint: end.tv_usec = 706000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 10
+insertBreakpoint: name = "39"
+insertBreakpoint: now.tv_sec = 946684830
+insertBreakpoint: now.tv_usec = 716000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 30716
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,119,252]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "39"
+getTimeFromBreakpoint: now.tv_usec = 418000
+getTimeFromBreakpoint: end.tv_usec = 716000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1702
+insertBreakpoint: name = "40"
+insertBreakpoint: now.tv_sec = 946684832
+insertBreakpoint: now.tv_usec = 418000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 32418
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "40"
+getTimeFromBreakpoint: now.tv_usec = 428000
+getTimeFromBreakpoint: end.tv_usec = 418000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 10
+insertBreakpoint: name = "41"
+insertBreakpoint: now.tv_sec = 946684832
+insertBreakpoint: now.tv_usec = 428000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 32458
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,126,202]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "41"
+getTimeFromBreakpoint: now.tv_usec = 539000
+getTimeFromBreakpoint: end.tv_usec = 428000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1111
+insertBreakpoint: name = "42"
+insertBreakpoint: now.tv_sec = 946684833
+insertBreakpoint: now.tv_usec = 539000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 33539
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "42"
+getTimeFromBreakpoint: now.tv_usec = 544000
+getTimeFromBreakpoint: end.tv_usec = 539000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 5
+insertBreakpoint: name = "43"
+insertBreakpoint: now.tv_sec = 946684833
+insertBreakpoint: now.tv_usec = 544000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 33549
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,131,13]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "43"
+getTimeFromBreakpoint: now.tv_usec = 885000
+getTimeFromBreakpoint: end.tv_usec = 544000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1341
+insertBreakpoint: name = "44"
+insertBreakpoint: now.tv_sec = 946684834
+insertBreakpoint: now.tv_usec = 885000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 34885
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "44"
+getTimeFromBreakpoint: now.tv_usec = 925000
+getTimeFromBreakpoint: end.tv_usec = 885000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 40
+insertBreakpoint: name = "45"
+insertBreakpoint: now.tv_sec = 946684834
+insertBreakpoint: now.tv_usec = 925000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 34990
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,136,174]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "45"
+getTimeFromBreakpoint: now.tv_usec = 754000
+getTimeFromBreakpoint: end.tv_usec = 925000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1829
+insertBreakpoint: name = "46"
+insertBreakpoint: now.tv_sec = 946684836
+insertBreakpoint: now.tv_usec = 754000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 36754
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "46"
+getTimeFromBreakpoint: now.tv_usec = 754000
+getTimeFromBreakpoint: end.tv_usec = 754000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 0
+insertBreakpoint: name = "47"
+insertBreakpoint: now.tv_sec = 946684836
+insertBreakpoint: now.tv_usec = 754000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 36754
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,143,146]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish
+RECEIVING start
+RECEIVING __deser
+ping_s_init ping_deser 2
+recv frame_type = 2
+ping_s_frame 3
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 10
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 9
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 8
+ping_s_init ping_deser 2
+ping_s_frame 1
+payload_length = 7
+ping_s_init ping_deser 2
+ping_s_payload ping_deser 2
+recv frame_type = 3
+ping_s_time 4
+ping_s_time 1
+payload_length = -2
+ping_s_payload ping_deser 2
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "47"
+getTimeFromBreakpoint: now.tv_usec = 666000
+getTimeFromBreakpoint: end.tv_usec = 754000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 1912
+insertBreakpoint: name = "48"
+insertBreakpoint: now.tv_sec = 946684838
+insertBreakpoint: now.tv_usec = 666000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 38666
+RECEIVING finsh
+C time = now_millis_last_bp
+getTimeFromBreakpoint: breakpoint  = "48"
+getTimeFromBreakpoint: now.tv_usec = 731000
+getTimeFromBreakpoint: end.tv_usec = 666000
+C time = now_millis_last_bp - timer started
+C time = now_millis_last_bp - time = 65
+insertBreakpoint: name = "49"
+insertBreakpoint: now.tv_sec = 946684838
+insertBreakpoint: now.tv_usec = 731000
+C time = now_millis
+C time = now_millis - timer started
+C time = now_millis - time = 38736
+sending from socket: 4
+port number 4990
+sending to id: [[1,112,105,110,103,3,0,0,0,0,0,0,151,80]]
+sending to id: client addr: 184549378 port: 4443
+port number 4990
+sending id finish

@@ -1,0 +1,11 @@
+00:00:00.000000000 [tid 1000] shadow_init_memory_manager(...) = 0
+000000000000000000 [tid 1000] gettimeofday(...) = 0
+000000000000000000 [tid 1000] time(...) = 946684800
+00:00:00.000000000 [tid 1000] socket(Inet, 2, 0) = 3
+00:00:00.000000000 [tid 1000] fstat(...) = 0
+000000000000000000 [tid 1000] gettimeofday(...) = 0
+00:00:00.000000000 [tid 1000] sendto(3, "\x01ping\x03\x00\xac\xcfj\xdc\x00\x00"..., 14, MsgFlags(0x0), 11.0.0.1:4987, 16) = 14
+00:00:00.000000000 [tid 1000] poll(...) = <blocked>
+00:00:03.000000000 [tid 1000] poll(...) = 0
+00:00:03.000000000 [tid 1000] write(1, "Sending Ping...\nServer did not respond "..., 47) = 47
+00:00:03.000000000 [tid 1000] exit_group(...) = <native>

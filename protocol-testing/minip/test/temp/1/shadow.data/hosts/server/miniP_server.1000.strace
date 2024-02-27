@@ -1,0 +1,7 @@
+00:00:00.000000000 [tid 1000] shadow_init_memory_manager(...) = 0
+000000000000000000 [tid 1000] gettimeofday(...) = 0
+000000000000000000 [tid 1000] time(...) = 946684800
+000000000000000000 [tid 1000] gettimeofday(...) = 0
+00:00:00.000000000 [tid 1000] socket(Inet, 2, 0) = 3
+00:00:00.000000000 [tid 1000] bind(3, 11.0.0.2:4443, 16) = 0
+00:00:00.000000000 [tid 1000] recvfrom(3, 0x7fffffffeb82, 14, MsgFlags(0x0), 0x7fffffffeba0, 16 (0x7fffffffeb60)) = <blocked>

@@ -1,0 +1,8 @@
+"http_request_file.txt"
+PROOTPATH 5b /PFV
+"/PFV/QUIC-Ivy-Attacker/doc/examples/quic/ping/http_request_file.txt"
+cannot open file: No such file or directory
+-1
+COUCOU
+cannot seek to beginning of file: Bad file descriptor
+recvfrom failed

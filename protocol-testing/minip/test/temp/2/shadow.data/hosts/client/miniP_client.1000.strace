@@ -1,0 +1,5 @@
+00:00:00.000000000 [tid 1000] shadow_init_memory_manager(...) = 0
+000000000000000000 [tid 1000] gettimeofday(...) = 0
+000000000000000000 [tid 1000] time(...) = 946684800
+00:00:00.000000000 [tid 1000] write(2, "1Usage: /PFV/implementations/minip-imple"..., 115) = 115
+00:00:00.000000000 [tid 1000] exit_group(...) = <native>
