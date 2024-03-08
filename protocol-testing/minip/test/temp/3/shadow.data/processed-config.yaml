@@ -62,7 +62,7 @@ hosts:
     network_node_id: 0
     processes:
     - path: /PFV/Protocols-Ivy/protocol-testing/minip/build//ping_server_test
-      args: seed=765 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377
+      args: seed=662 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377
       environment:
         CNT: '0'
         ENCRYPT_TICKET_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_encrypt_session_ticket.txt
@@ -84,7 +84,7 @@ hosts:
         initial_max_stream_data_bidi_remote: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_data_bidi_remote.txt
         initial_max_stream_data_uni: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_data_uni.txt
         initial_max_stream_id_bidi: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_id_bidi.txt
-      start_time: 0 sec
+      start_time: 5 sec
       shutdown_time: null
       shutdown_signal: SIGTERM
       expected_final_state:
@@ -99,10 +99,10 @@ hosts:
   server:
     network_node_id: 0
     processes:
-    - path: /PFV/implementations/minip-implementations//ping-pong/./miniP_server
+    - path: /PFV/implementations/minip-implementations//ping-pong-fail/./miniP_server
       args: -p "4443" -i 11.0.0.2
       environment: {}
-      start_time: 0 sec
+      start_time: 1 sec
       shutdown_time: null
       shutdown_signal: SIGTERM
       expected_final_state:

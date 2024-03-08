@@ -15,8 +15,8 @@ Z3_LIBRARY_PATH /PFV/Protocols-Ivy//submodules/z3/build;
 LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/PFV/Protocols-Ivy//submodules/z3/build
 PROOTPATH /PFV
 PYTHONPATH ${PYTHONPATH}:/PFV/implementations/$PROT-implementations//aioquic:/PFV/Protocols-Ivy//submodules/z3/build/python
-PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
-LOSS 1.0
+PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
+LOSS 0.0
 LATENCY 10
 JITTER 10
 TEST_IMPL ping-pong
@@ -54,7 +54,7 @@ network:
           target 0
           latency "10 ms"
           jitter "10 ms"
-          packet_loss 1.0
+          packet_loss 0.0
         ]
       ]
 
@@ -67,26 +67,27 @@ hosts:
     network_node_id: 0
     ip_addr: "11.0.0.1"
     processes:
-    # timeout 30 /PFV/QUIC-Ivy-Attacker/doc/examples/quic/build/quic_server_test_stream seed=931 
+    # timeout 30 /PFV/Protocols-Ivy/doc/examples/quic/build/quic_server_test_stream seed=931 
     # the_cid=0 server_port=4443 iversion=1 server_addr=2130706433 modify_packets=false server_cid=1 client_port=4987 
     # client_port_alt=4988 client_addr=2130706433 
     - path: /PFV/Protocols-Ivy/protocol-testing/minip/build//ping_server_test
-      args:  seed=849 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377 
+      args:  seed=476 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377 
+      start_time: 5s
       environment:
           PROOTPATH: /PFV
           PATH: /root/.local/bin:/root/.cargo/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin
-          ZRTT_SSLKEYLOGFILE: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/last_tls_key.txt
-          RETRY_TOKEN_FILE: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/last_retry_token.txt
-          NEW_TOKEN_FILE: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/last_new_token.txt
-          ENCRYPT_TICKET_FILE: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/last_encrypt_session_ticket.txt          
-          SESSION_TICKET_FILE: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/last_session_ticket_cb.txt
-          SAVED_PACKET: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/saved_packet.txt
-          initial_max_stream_id_bidi: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/initial_max_stream_id_bidi.txt
-          active_connection_id_limit: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/active_connection_id_limit.txt
-          initial_max_stream_data_bidi_local: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/initial_max_stream_data_bidi_local.txt
-          initial_max_stream_data_bidi_remote: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/initial_max_stream_data_bidi_remote.txt
-          initial_max_stream_data_uni: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/initial_max_stream_data_uni.txt
-          initial_max_data: /PFV/QUIC-Ivy-Attacker/doc/examples/quic/initial_max_data.txt
+          ZRTT_SSLKEYLOGFILE: /PFV/Protocols-Ivy/doc/examples/quic/last_tls_key.txt
+          RETRY_TOKEN_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_retry_token.txt
+          NEW_TOKEN_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_new_token.txt
+          ENCRYPT_TICKET_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_encrypt_session_ticket.txt          
+          SESSION_TICKET_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_session_ticket_cb.txt
+          SAVED_PACKET: /PFV/Protocols-Ivy/doc/examples/quic/saved_packet.txt
+          initial_max_stream_id_bidi: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_id_bidi.txt
+          active_connection_id_limit: /PFV/Protocols-Ivy/doc/examples/quic/active_connection_id_limit.txt
+          initial_max_stream_data_bidi_local: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_data_bidi_local.txt
+          initial_max_stream_data_bidi_remote: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_data_bidi_remote.txt
+          initial_max_stream_data_uni: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_stream_data_uni.txt
+          initial_max_data: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_data.txt
           INITIAL_VERSION: "<VERSION>"
           TEST_TYPE: server
           TEST_IMPL: <IMPLEMENTATION>
@@ -103,6 +104,7 @@ hosts:
     #   args: -i 11.0.0.2 -p "4443"
     - path: /PFV/implementations/minip-implementations//ping-pong/./miniP_server
       args: -p "4443" -i 11.0.0.2
+      start_time: 1s
 
 rm -r /PFV/shadow.data/ 
 command: shadow /PFV/shadow_server_test.yml > shadow.log

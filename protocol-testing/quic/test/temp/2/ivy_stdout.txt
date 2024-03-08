@@ -1,8 +1,8 @@
 implementation command: ./picoquicdemo -e implem -c /PFV/implementations/quic-implementations//picoquic//certs/cert.pem -T /PFV/tickets/ticket.bin -l - -k /PFV/implementations/quic-implementations//picoquic//certs/key.pem -a ALPN -v VERSION -D -L -n servername 11.0.0.1 4443
-/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_timeout_no_sleep (0) ...
-/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_timeout_no_sleep0.out
-/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_timeout_no_sleep0.err
-/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_timeout_no_sleep0.iev
+/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_deadconnection_signal (0) ...
+/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_deadconnection_signal0.out
+/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_deadconnection_signal0.err
+/PFV/Protocols-Ivy/protocol-testing/quic/test/temp/2/quic_client_test_deadconnection_signal0.iev
 looped: 1
 Resetting the implementation command
 Starting the implementation
@@ -13,7 +13,7 @@ implementation diretory: /PFV/implementations/quic-implementations//picoquic
 True
 Generate shadow config
 Generating tester command
-quic_client_test_timeout_no_sleep
+quic_client_test_deadconnection_signal
 shadow test:
 IVY_INCLUDE_PATH ${IVY_INCLUDE_PATH}:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.8.24-py2.7.egg/ivy/include/1.7
 Z3_LIBRARY_DIRS /PFV/Protocols-Ivy//submodules/z3/build
@@ -21,14 +21,14 @@ Z3_LIBRARY_PATH /PFV/Protocols-Ivy//submodules/z3/build;
 LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/PFV/Protocols-Ivy//submodules/z3/build
 PROOTPATH /PFV
 PYTHONPATH ${PYTHONPATH}:/PFV/implementations/$PROT-implementations//aioquic:/PFV/Protocols-Ivy//submodules/z3/build/python
-PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
+PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
 LOSS 0.0
 LATENCY 10
 JITTER 10
 INITIAL_VERSION 29
-TEST_IMPL picoquic-shadow
+TEST_IMPL picoquic
 TEST_ALPN hq-29
-SSLKEYLOGFILE /PFV/tls-keys/picoquic-shadow_key.log
+SSLKEYLOGFILE /PFV/tls-keys/picoquic_key.log
 CNT 1
 TEST_TYPE client
 general:
@@ -77,8 +77,8 @@ hosts:
     network_node_id: 0
     ip_addr: "11.0.0.1"
     processes:
-    - path: /PFV/Protocols-Ivy/protocol-testing/quic/build//quic_client_test_timeout_no_sleep
-      args:  seed=795 the_cid=1 server_port=4443 iversion=29 server_addr=184549377 modify_packets=false  
+    - path: /PFV/Protocols-Ivy/protocol-testing/quic/build//quic_client_test_deadconnection_signal
+      args:  seed=192 the_cid=1 server_port=4443 iversion=29 server_addr=184549377 modify_packets=false  
       start_time: 1s
       environment:
           PROOTPATH: /PFV
@@ -97,10 +97,10 @@ hosts:
           initial_max_data: /PFV/Protocols-Ivy/doc/examples/quic/initial_max_data.txt
           INITIAL_VERSION: "29"
           TEST_TYPE: client
-          TEST_IMPL: picoquic-shadow
+          TEST_IMPL: picoquic
           TEST_ALPN: hq-29
           # TIMEOUT_IVY: "15"
-          SSLKEYLOGFILE: /PFV/tls-keys/picoquic-shadow_key.log
+          SSLKEYLOGFILE: /PFV/tls-keys/picoquic_key.log
           # TODO
           CNT: "0"
 

@@ -37,11 +37,11 @@ before packet_event(src:ip.endpoint,dst:ip.endpoint,pkt:quic_packet) {
     #     call _finalize;
     # };
     if ~_generating {
-        if last_pkt_num(the_cid,quic_packet_type.one_rtt) > 5  & ~slept & handshake_done_send {  # & path_validated
+        if last_pkt_num(the_cid,quic_packet_type.one_rtt) > 1  & ~slept & handshake_done_send {  # & path_validated
             var idle_timeout_forced := max_idle_timeout_used;
             call sleep_event(idle_timeout_forced);
             var force_packet_retransmission_timeout := max_ack_delay_tp;
-            sleep_start := time_api.c_timer.sleep_signal_and_generate(2000); #(microseconds_to_milliseconds(idle_timeout_forced));
+            sleep_start := time_api.c_timer.sleep_signal(microseconds_to_milliseconds(idle_timeout_forced)); #sleep_signal_and_generate(2000); #(microseconds_to_milliseconds(idle_timeout_forced));
             slept := true;
         }
     }

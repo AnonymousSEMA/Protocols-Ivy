@@ -61,8 +61,8 @@ hosts:
   client:
     network_node_id: 0
     processes:
-    - path: /PFV/Protocols-Ivy/protocol-testing/quic/build//quic_server_test_timeout_no_sleep
-      args: seed=316 the_cid=1 server_port=4443 iversion=29 server_addr=184549378 modify_packets=false server_cid=2 client_port=4990 client_port_alt=4991 client_addr=184549377
+    - path: /PFV/Protocols-Ivy/protocol-testing/quic/build//quic_server_test_deadconnection_signal
+      args: seed=247 the_cid=1 server_port=4443 iversion=29 server_addr=184549378 modify_packets=false server_cid=2 client_port=4990 client_port_alt=4991 client_addr=184549377
       environment:
         CNT: '0'
         ENCRYPT_TICKET_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_encrypt_session_ticket.txt
@@ -73,9 +73,9 @@ hosts:
         RETRY_TOKEN_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_retry_token.txt
         SAVED_PACKET: /PFV/Protocols-Ivy/doc/examples/quic/saved_packet.txt
         SESSION_TICKET_FILE: /PFV/Protocols-Ivy/doc/examples/quic/last_session_ticket_cb.txt
-        SSLKEYLOGFILE: /PFV/tls-keys/picoquic-shadow_key.log
+        SSLKEYLOGFILE: /PFV/tls-keys/picoquic_key.log
         TEST_ALPN: hq-29
-        TEST_IMPL: picoquic-shadow
+        TEST_IMPL: picoquic
         TEST_TYPE: server
         ZRTT_SSLKEYLOGFILE: /PFV/Protocols-Ivy/doc/examples/quic/last_tls_key.txt
         active_connection_id_limit: /PFV/Protocols-Ivy/doc/examples/quic/active_connection_id_limit.txt

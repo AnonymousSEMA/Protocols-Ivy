@@ -15,11 +15,11 @@ Z3_LIBRARY_PATH /PFV/Protocols-Ivy//submodules/z3/build;
 LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/PFV/Protocols-Ivy//submodules/z3/build
 PROOTPATH /PFV
 PYTHONPATH ${PYTHONPATH}:/PFV/implementations/$PROT-implementations//aioquic:/PFV/Protocols-Ivy//submodules/z3/build/python
-PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
+PATH /shadow/cmake-3.26.4-linux-x86_64/bin:/root/.cargo/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/PFV/Protocols-Ivy//submodules/z3/build
 LOSS 0.0
 LATENCY 10
 JITTER 10
-TEST_IMPL ping-pong
+TEST_IMPL ping-pong-fail
 CNT 0
 TEST_TYPE server
 general:
@@ -71,7 +71,8 @@ hosts:
     # the_cid=0 server_port=4443 iversion=1 server_addr=2130706433 modify_packets=false server_cid=1 client_port=4987 
     # client_port_alt=4988 client_addr=2130706433 
     - path: /PFV/Protocols-Ivy/protocol-testing/minip/build//ping_server_test
-      args:  seed=765 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377 
+      args:  seed=662 server_port=4443 server_addr=184549378  client_port=4990  client_addr=184549377 
+      start_time: 5s
       environment:
           PROOTPATH: /PFV
           PATH: /root/.local/bin:/root/.cargo/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin
@@ -101,8 +102,9 @@ hosts:
     processes:
     # - path: /PFV/implementations/quic-implementations/ping-pong/miniP_server
     #   args: -i 11.0.0.2 -p "4443"
-    - path: /PFV/implementations/minip-implementations//ping-pong/./miniP_server
+    - path: /PFV/implementations/minip-implementations//ping-pong-fail/./miniP_server
       args: -p "4443" -i 11.0.0.2
+      start_time: 1s
 
 rm -r /PFV/shadow.data/ 
 command: shadow /PFV/shadow_server_test.yml > shadow.log
