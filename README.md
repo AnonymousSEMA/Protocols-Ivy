@@ -8,7 +8,7 @@ proofs, and supports a use model in which the human protocol designer
 and the automated tool interact to expose errors and prove
 correctness.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10819553.svg)](https://doi.org/10.5281/zenodo.10819553)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10819552.svg)](https://doi.org/10.5281/zenodo.10819552)
 
 # Installation
 ## Linux
